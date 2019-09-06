@@ -28,17 +28,6 @@ public class ImUserController extends BaseController {
     @RequestMapping(value = "/save", method = RequestMethod.GET)
     public String imUser() {
 
-		ArrayList<String> list = new ArrayList<>();
-		list.add("ddddddddd");
-		list.add("ddddddddd");
-		list.add("ddddddddd");
-		list.add("ddddddddd");
-		list.add("ddddddddd");
-		list.add("ddddddddd");
-
-		list.add("ddddddddd");
-
-
 		return null;
 	}
 	@ResponseBody
