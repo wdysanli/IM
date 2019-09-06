@@ -1,5 +1,6 @@
 package org.jim.server.controller;
 
+import java.util.ArrayList;
 import java.util.Optional;
 
 import org.jim.server.base.bo.ResultContent;
@@ -26,11 +27,27 @@ public class ImUserController extends BaseController {
 	@ResponseBody
     @RequestMapping(value = "/save", method = RequestMethod.GET)
     public String imUser() {
-		
-			
+
+		ArrayList<String> list = new ArrayList<>();
+		list.add("ddddddddd");
+		list.add("ddddddddd");
+		list.add("ddddddddd");
+		list.add("ddddddddd");
+		list.add("ddddddddd");
+		list.add("ddddddddd");
+
+		list.add("ddddddddd");
+
+
 		return null;
 	}
-	
+	@ResponseBody
+	public ResultContent list(String userName, String password) {
+		ImUser imUser = imUserService.login(userName, password);
+		if (imUser == null) return new ResultContent(ResultMapInfo.GETFAIL);
+		getSession().setAttribute("imUser", imUser);
+		return new ResultContent(ResultMapInfo.GETSUCCESS, imUser);
+	}
 	@ResponseBody
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public ResultContent login(String userName, String password) {
