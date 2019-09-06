@@ -30,13 +30,7 @@ public class ImUserController extends BaseController {
 
 		return null;
 	}
-	@ResponseBody
-	public ResultContent list(String userName, String password) {
-		ImUser imUser = imUserService.login(userName, password);
-		if (imUser == null) return new ResultContent(ResultMapInfo.GETFAIL);
-		getSession().setAttribute("imUser", imUser);
-		return new ResultContent(ResultMapInfo.GETSUCCESS, imUser);
-	}
+
 	@ResponseBody
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public ResultContent login(String userName, String password) {
