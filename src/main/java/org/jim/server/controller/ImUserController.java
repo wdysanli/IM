@@ -30,7 +30,7 @@ public class ImUserController extends BaseController {
 
 		System.out.println("ddddddddd");
 		System.out.println("ddddddddd");
-		System.out.println("ddddddddd");System.out.println("ddddddddd");
+		System.out.println("ddddddddd");
 		System.out.println("ddddddddd");
 		System.out.println("ddddddddd");
 		System.out.println("ddddddddd");
