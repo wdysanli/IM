@@ -28,13 +28,13 @@ public class ImUserController extends BaseController {
     @RequestMapping(value = "/save", method = RequestMethod.GET)
     public String imUser() {
 
-		System.out.println("ddddddddd");
-		System.out.println("ddddddddd");
-		System.out.println("ddddddddd");System.out.println("ddddddddd");
-		System.out.println("ddddddddd");
-		System.out.println("ddddddddd");
-		System.out.println("ddddddddd");
-
+		System.out.println("ffffffff");
+		System.out.println("ffffffff");
+		System.out.println("ffffffff");
+		System.out.println("ffffffff");
+		System.out.println("ffffffff");
+		System.out.println("ffffffff");
+		System.out.println("ffffffff");
 
 		return null;
 	}
